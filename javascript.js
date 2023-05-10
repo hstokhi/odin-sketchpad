@@ -20,12 +20,22 @@ function makeGrid(gridSize) {
         }
     }
     
-    
 }
 
-window.onload = function() {
+makeGrid(16)
+/*window.onload = function() {
     makeGrid(16)
-};
+};*/
+
+const button = document.querySelector('button')
+button.addEventListener('click', () => {
+    const rows = document.querySelectorAll('.row')
+    rows.forEach((row) => {
+        container.removeChild(row)
+    })
+    const newSize = parseInt(prompt('Enter value between 1 and 100:', '1'))
+    makeGrid(newSize)
+})
 
 /*const grid = document.querySelectorAll('.column');
 grid.forEach((gridBlock) => {

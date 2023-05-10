@@ -7,7 +7,9 @@
     border-style: solid;
     border-color: black;
 }
-
+.header {
+    text-align: center;
+}
 .colored {
     background-color: black;
 }
